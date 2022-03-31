@@ -12,13 +12,14 @@ tags:
 
 # EsLint and Prettier in VScode
 
-## Initialize a project
+## Initialize a project from scrach
 
-`npm init -y`  
-`npm install eslint --save-dev`  
-`npm init @eslint/config`
+Run `npm init -y` to initialize the project  
+Run `npm install eslint --save-dev` to install ESLint locally in dev dependencies  
+Run `npm init @eslint/config` to config
 
-Add `.eslintrc` file
+A `.eslintrc.{js,yml,json}` file is added  
+For json file:
 
 ```json
 {
@@ -30,7 +31,60 @@ Add `.eslintrc` file
 }
 ```
 
-In the `Perefernce`->`Setting`, search `formatting`
+For js file in React project
+
+```javascript
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['plugin:react/recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
+  rules: {
+    'react/jsx-indent': 'off',
+    'react/jsx-indent-props': 'off',
+    'react/react-in-jsx-scope': 'off', // not needed in React17
+    'comma-dangle': 'off',
+    'linebreak-style': 0, //different os have different linebreak-style
+  },
+};
+```
+
+### Use it
+
+You can use npx to run ESLint on the command line like this:
+
+```cmd
+# Run on two files
+npx eslint file1.js file2.js
+
+# Run on multiple files
+npx eslint lib/**
+
+```
+
+To run it in npm, you need to add lint in package.json file  
+You can run `npm run lint` in React package
+
+```json
+{
+  "scripts": {
+    "lint": "eslint src/**/*.js src/**/*.jsx"
+  }
+}
+```
+
+## Add Prettier in VScode
+
+In the VScode `Perefernce`->`Setting`, search `formatting`
 Turn on `Format On Save` and select `Prettier` as `Default Formatter`
 
 Or, [Open setting.json file and update it.](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson)
