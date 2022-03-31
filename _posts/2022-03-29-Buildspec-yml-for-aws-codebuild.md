@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Build a CI/CD Pipeline on AWS CodePipeline'
-subtitle: 'For a React App |'
+subtitle: 'For a React App'
 date: 2022-03-28
 author: 'Jiali'
 header-img: 'img/post-bg-react.png'

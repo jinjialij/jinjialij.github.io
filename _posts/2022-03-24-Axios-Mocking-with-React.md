@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Axios Mocking with React'
-subtitle: 'Using Jekyll, on Windows'
+subtitle: 'Using axios-mock-adapter'
 date: 2022-03-24
 author: 'Jiali'
 header-img: 'img/post-bg-react.png'
@@ -36,7 +36,7 @@ mock.onGet('/users').reply(200, mockData);
 const { data } = await axios.get('/users');
 ```
 
-The above code doesn't create an instance. It works. However, when you do `const res = await axios(url);` in other part, you will get errors. Because they share the same axios you use to do the mocking. That's why you need a seprate instance for mock.
+The above code doesn't create an instance. Therefore, when you do `const res = await axios(url);`, and you use axios in another files, you will get errors. Because they share the same axios you use to do the mocking. That's why you need a seprate instance for mock.
 
 In `axios-mock-instance.js` file:
 
