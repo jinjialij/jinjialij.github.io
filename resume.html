@@ -1,0 +1,105 @@
+---
+layout: default
+title: "Resume"
+header-img: ""
+---
+
+<!-- Page Header -->
+<header class="intro-header"
+    style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>Jiali Jin</h1>
+                    <ul class="list-inline text-center">
+                        <li class="job-title">Software Developer</li>
+                        {% if site.email %}
+                        <li>
+                            <a href="mailto:{{ site.email | encode_email }}">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if site.linkedin_username %}
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% if site.github_username %}
+                        <li>
+                            <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+            <h3>Profile</h3>
+            <ul class="list-inline">
+                <li class="job-title">Quick learner, especially in adopting new technologies in web development
+                <li>
+                <li>Have experience with frameworks such as React, Angular, Bootstrap and Express.js</li>
+                <li>Proficient in Java, Javascript, HTML5 and CSS5, has some exposure to PHP</li>
+                <li>Good understanding of RESTful web services, SQL(MySQL) and NoSQL(MongoDB) and, Git</li>
+                <li>Excellent communication and teamwork skills</p>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+            <h3>Skills</h3>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+            <h3>Experience</h3>
+            <p>Junior Software Developer (Co-op) <span>Intricate Group Inc, Halifax, Canada</span></p>
+            <span>May 2019 - Aug 2020</span>
+            <ul class="list-inline">
+                <li class="job-title">Work independently on API and other required features in the front end, building
+                    RESTful web services,
+                    new functionalities and UI on the web pages, bug fixes, and other code changes using Java,
+                    JavaScript,
+                    jQuery, CSS, SQL, and related technologies.
+                <li>
+                <li>Create SQL database migration scripts.</li>
+                <li>Create automated tests to help verify the correctness of written codes.</li>
+                <li>Participate in design discussions to determine the best approach to implementing specific features,
+                    bug
+                    fixes, and other code changes.</li>
+                <li>Use Git to manage work. Document codes at an appropriate level of detail and assist in maintaining
+                    other
+                    project documentation.</li>
+                <li>Proactively communicate with the supervisor to ensure work progresses efficiently and effectively.
+                </li>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+            <h3>Personal Projects</h3>
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+            <h3>Education</h3>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.body.classList.add('page-resume');
+</script>
