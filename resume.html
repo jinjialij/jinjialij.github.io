@@ -4,6 +4,65 @@ title: "Resume"
 header-img: ""
 ---
 
+<style type="text/css">
+    .section-title {
+        font-size: 3.5rem;
+    }
+
+    .bulletin-list {
+        margin: 0;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exp-body-fs {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        display: inline-flex;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .company {
+        display: inline-flex;
+    }
+
+    .duration {
+        color: gray;
+    }
+
+    .skill-list {
+        margin-top: 1rem;
+    }
+
+    .tab {
+        color: #737373;
+        border-radius: 16px;
+        border: solid;
+        border-width: 2px;
+        border-color: #A68DA2;
+        background-color: #F2F2F2;
+        font-size: 1.6rem;
+
+        padding: 0 10px;
+        padding-right: 10px;
+    }
+
+    button:hover {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    button:active {
+        border-color: #4C1C59;
+        color: #2E148C;
+    }
+</style>
 <!-- Page Header -->
 <header class="intro-header"
     style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
@@ -55,25 +114,66 @@ header-img: ""
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3>Profile</h3>
-            <ul class="list-inline">
-                <li class="job-title">Quick learner, especially in adopting new technologies in web development
-                <li>
+            <h3 class="section-title">Profile</h3>
+            <ul class="bulletin">
+                <li>Quick learner, especially in adopting new technologies in web development</li>
                 <li>Have experience with frameworks such as React, Angular, Bootstrap and Express.js</li>
                 <li>Proficient in Java, Javascript, HTML5 and CSS5, has some exposure to PHP</li>
                 <li>Good understanding of RESTful web services, SQL(MySQL) and NoSQL(MongoDB) and, Git</li>
-                <li>Excellent communication and teamwork skills</p>
+                <li>Excellent communication and teamwork skills</li>
+            </ul>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3>Skills</h3>
+            <h3 class="section-title">Skills</h3>
+            <div>
+                <button class="tab" onclick="openTab('Frontend')">Frontend</button>
+                <button class="tab" onclick="openTab('Backend')">Backend</button>
+                <button class="tab" onclick="openTab('progLang')">Programing Language</button>
+                <button class="tab" onclick="openTab('other')">Other</button>
+            </div>
+            <div id="Frontend" class="skill">
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>JSX</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+
+            <div id="Backend" class="skill" style="display:none">
+                <ul class="skill-list">
+                    <li>Express</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+
+            <div id="progLang" class="skill" style="display:none">
+                <ul class="skill-list">
+                    <li>Javascript</li>
+                    <li>Java</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div id="other" class="skill" style="display:none">
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>Heroku</li>
+                    <li>Firebase</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3>Experience</h3>
-            <p>Junior Software Developer (Co-op)</p>
-            <i>Intricate Group Inc, Halifax, Canada</i>
-            <p>May 2019 - Aug 2020</p>
-            <hr />
-            <ul class="listing-seperator">
+            <h3 class="section-title">Experience</h3>
+            <div class="exp">
+                <div class="title">Junior Software Developer (Co-op)</div>
+                <div class="company exp-body-fs"> <i>Intricate Group Inc, Halifax, Canada</i></div>
+                <div class="duration">May 2019 - Aug 2020</div>
+            </div>
+            <ul class="bulletin-list exp-body-fs">
                 <li>Work independently on API and other required features in the front end, building
                     RESTful web services,
                     new functionalities and UI on the web pages, bug fixes, and other code changes using Java,
@@ -89,17 +189,27 @@ header-img: ""
                     project documentation.</li>
                 <li>Proactively communicate with the supervisor to ensure work progresses efficiently and effectively.
                 </li>
+            </ul>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3>Personal Projects</h3>
+            <h3 class="section-title">Personal Projects</h3>
         </div>
 
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3>Education</h3>
-            <p>Dalhousie University</p>
-            <p>Halifax, Nova Scotia</p>
-            <p>September 2017 - May 2021</p>
-            <p><i>Bachelor of Applied Computer Science – Co-op, Minor Statistics</i></p>
+            <h3 class="section-title">Education</h3>
+            <div class="exp">
+                <div class="title">Dalhousie University</div>
+                <div><i>Bachelor of Applied Computer Science – Co-op, Minor Statistics</i></div>
+                <div class="company exp-body-fs">Halifax, Nova Scotia</div>
+                <div class="duration  exp-body-fs">September 2017 - May 2021</div>
+                <hr />
+                <div class="company"> <i>Awards</i> </div>
+                <ul class="exp-body-fs">
+                    <li>Dalhousie Sexton Scholar (2018,2019, 2020, and 2021 )</li>
+                    <li>Dalhousie’s Spring 2021 convocation medal</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -107,4 +217,12 @@ header-img: ""
 
 <script>
     document.body.classList.add('page-resume');
+    function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("skill");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
 </script>
