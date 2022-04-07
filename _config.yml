@@ -11,8 +11,8 @@ url: 'https://jinjialij.github.io/' # your host, for absolute URL
 # SNS settings
 RSS: false
 linkedin_username: 'jialijin'
+portfolio: 'jiali'
 github_username: 'jinjialij'
-linkedin_username: 'jialijin'
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
