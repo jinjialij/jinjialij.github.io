@@ -33,7 +33,7 @@ header-img: ""
     }
 
     .duration {
-        color: gray;
+        color: #737373;
     }
 
     .skill-list {
@@ -41,11 +41,11 @@ header-img: ""
     }
 
     .tab {
-        color: #737373;
+        color: #0085A1;
         border-radius: 16px;
         border: solid;
-        border-width: 2px;
-        border-color: #A68DA2;
+        border-width: 1px;
+        border-color: #0085A1;
         background-color: #F2F2F2;
         font-size: 1.6rem;
 
@@ -136,10 +136,10 @@ header-img: ""
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
             <h3 class="section-title">Skills</h3>
             <div>
-                <button class="tab" onclick="openTab('Frontend')">Frontend</button>
-                <button class="tab" onclick="openTab('Backend')">Backend</button>
-                <button class="tab" onclick="openTab('progLang')">Programing Language</button>
-                <button class="tab" onclick="openTab('other')">Other</button>
+                <button class="tab" onclick="openTab('Frontend','skill')">Frontend</button>
+                <button class="tab" onclick="openTab('Backend','skill')">Backend</button>
+                <button class="tab" onclick="openTab('progLang','skill')">Programing Language</button>
+                <button class="tab" onclick="openTab('other','skill')">Other</button>
             </div>
             <div id="Frontend" class="skill">
                 <ul class="skill-list">
@@ -203,6 +203,46 @@ header-img: ""
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
             <h3 class="section-title">Personal Projects</h3>
+            <div>
+                <button class="tab" onclick="openTab('react', 'proj')">React</button>
+                <button class="tab" onclick="openTab('express','proj')">Express</button>
+                <button class="tab" onclick="openTab('angular','proj')">Angular</button>
+                <button class="tab" onclick="openTab('otherProj','proj')">Other Projects</button>
+            </div>
+            <div id="react" class="proj">
+                <div>
+                    <h5>Zip Info</h5>
+                    <div><span class="tech">React | Bootstrap | Firebase Hosting | Apis</span></div>
+                    <div><span class="sub-intro">A web app where you can find out post code information</span></div>
+                    <p class="brief">This app use Formik and Yup to validate form fields. It also has a dynamic form
+                        that
+                        generates fields based on another field
+                    </p>
+                </div>
+                <hr />
+                <div>
+                    <h5>Bistro star</h5>
+                    <div><span class="tech">React | Firebase Hosting</span></div>
+                    <div><span class="sub-intro">A web app where you can order meals</span></div>
+                    <p class="brief">User can add or remove meals from the cart. They can also checkout after inputting
+                        user information
+                    </p>
+                </div>
+                <hr />
+                <div>
+                    <h5>Meet up</h5>
+                    <div><span class="tech">React | Express | Firebase Hosting</span></div>
+                    <div><span class="sub-intro">User can post and view meetup information</span></div>
+                    <p class="brief">Users can post new meetups, pin their favourite meetups, and browse meetups
+                        information. All meetups are paginated. The
+                        web app retrieves data from a backend: meetuphere, which is built by Express and MongoDB
+                    </p>
+                </div>
+            </div>
+
+            <div id="express" class="proj" style="display:none">
+                <h5>Meetup Api</h5>
+            </div>
         </div>
 
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
@@ -227,9 +267,9 @@ header-img: ""
 
 <script>
     document.body.classList.add('page-resume');
-    function openTab(tabName) {
+    function openTab(tabName, classname) {
         var i;
-        var x = document.getElementsByClassName("skill");
+        var x = document.getElementsByClassName(classname);
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
