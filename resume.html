@@ -111,7 +111,8 @@ header-img: "img/post-bg-resume.jpg"
                             <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    <!-- <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> -->
+                                    <i class="fa fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
@@ -122,7 +123,8 @@ header-img: "img/post-bg-resume.jpg"
                             <a target="_blank" href="https://github.com/{{ site.github_username }}">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                                    <!-- <i class="fa fa-github fa-stack-1x fa-inverse"></i> -->
                                 </span>
                             </a>
                         </li>
@@ -147,7 +149,9 @@ header-img: "img/post-bg-resume.jpg"
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3 class="section-title">Profile</h3>
+            <h3 class="section-title">Profile<span class="fa-stack">
+                    <i class="fas fa-address-book"></i>
+                </span></h3>
             <ul class="bulletin">
                 <li>Quick learner, especially in adopting new technologies in web development</li>
                 <li>Have experience with frameworks such as React, Angular, Bootstrap and Express.js</li>
@@ -157,7 +161,12 @@ header-img: "img/post-bg-resume.jpg"
             </ul>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3 class="section-title">Skills</h3>
+            <h3 class="section-title">Skills
+                <span class="fa-stack">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </span>
+            </h3>
+
             <div>
                 <button class="tab" onclick="openTab('Frontend','skill')">Frontend</button>
                 <button class="tab" onclick="openTab('Backend','skill')">Backend</button>
@@ -200,7 +209,11 @@ header-img: "img/post-bg-resume.jpg"
             </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3 class="section-title">Experience</h3>
+            <h3 class="section-title">Experience
+                <span class="fa-stack">
+                    <i class="fas fa-sticky-note"></i>
+                </span>
+            </h3>
             <div class="exp">
                 <div class="title">Junior Software Developer (Co-op)</div>
                 <div class="company exp-body-fs"> <i>Intricate Group Inc, Halifax, Canada</i></div>
@@ -233,7 +246,8 @@ header-img: "img/post-bg-resume.jpg"
                 <a style="color:black;" onMouseOver="this.style.color='#0085A1'" onMouseOut="this.style.color='black'"
                     target="_blank" href="https://{{ site.portfolio }}portfolio.web.app/projects">
                     <span class="fa-stack">
-                        <i class="fa fa-briefcase fa-stack-1x"></i>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <!-- <i class="fa fa-briefcase fa-stack-1x"></i> -->
                     </span>
                 </a>
                 {% endif %}
@@ -311,7 +325,11 @@ header-img: "img/post-bg-resume.jpg"
         </div>
 
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3 class="section-title">Education</h3>
+            <h3 class="section-title">Education
+                <span class="fa-stack">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+            </h3>
             <div class="exp">
                 <div class="title">Dalhousie University</div>
                 <div><i>Bachelor of Applied Computer Science – Co-op, Minor Statistics</i></div>
