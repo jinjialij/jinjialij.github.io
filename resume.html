@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Resume"
-header-img: ""
+header-img: "img/post-bg-resume-2.jpg"
 ---
 
 <style type="text/css">
@@ -48,7 +48,7 @@ header-img: ""
         border-color: #0085A1;
         background-color: #F2F2F2;
         font-size: 1.6rem;
-
+        margin: 5px 0;
         padding: 0 10px;
         padding-right: 10px;
     }
@@ -61,6 +61,29 @@ header-img: ""
     button:active {
         border-color: #4C1C59;
         color: #2E148C;
+    }
+
+    .tab-tag {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: block;
+        color: #737373;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+
+    .sub-intro {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: block;
+        color: #737373;
+        padding: 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .brief {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+        padding: 0;
     }
 </style>
 <!-- Page Header -->
@@ -202,7 +225,19 @@ header-img: ""
             </ul>
         </div>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-            <h3 class="section-title">Personal Projects</h3>
+            <h3 class="section-title"><a target="_blank" style="color:black;text-decoration: none"
+                    onMouseOver="this.style.color='#0085A1'" onMouseOut="this.style.color='black'"
+                    href="https://{{ site.portfolio }}portfolio.web.app/projects">Personal
+                    Projects</a>
+                {% if site.portfolio %}
+                <a style="color:black;" onMouseOver="this.style.color='#0085A1'" onMouseOut="this.style.color='black'"
+                    target="_blank" href="https://{{ site.portfolio }}portfolio.web.app/projects">
+                    <span class="fa-stack">
+                        <i class="fa fa-briefcase fa-stack-1x"></i>
+                    </span>
+                </a>
+                {% endif %}
+            </h3>
             <div>
                 <button class="tab" onclick="openTab('react', 'proj')">React</button>
                 <button class="tab" onclick="openTab('express','proj')">Express</button>
@@ -212,7 +247,7 @@ header-img: ""
             <div id="react" class="proj">
                 <div>
                     <h5>Zip Info</h5>
-                    <div><span class="tech">React | Bootstrap | Firebase Hosting | Apis</span></div>
+                    <div><span class="tab-tag">React | Bootstrap | Firebase Hosting | Apis</span></div>
                     <div><span class="sub-intro">A web app where you can find out post code information</span></div>
                     <p class="brief">This app use Formik and Yup to validate form fields. It also has a dynamic form
                         that
@@ -222,7 +257,7 @@ header-img: ""
                 <hr />
                 <div>
                     <h5>Bistro star</h5>
-                    <div><span class="tech">React | Firebase Hosting</span></div>
+                    <div><span class="tab-tag">React | Firebase Hosting</span></div>
                     <div><span class="sub-intro">A web app where you can order meals</span></div>
                     <p class="brief">User can add or remove meals from the cart. They can also checkout after inputting
                         user information
@@ -231,7 +266,7 @@ header-img: ""
                 <hr />
                 <div>
                     <h5>Meet up</h5>
-                    <div><span class="tech">React | Express | Firebase Hosting</span></div>
+                    <div><span class="tab-tag">React | Express | Firebase Hosting</span></div>
                     <div><span class="sub-intro">User can post and view meetup information</span></div>
                     <p class="brief">Users can post new meetups, pin their favourite meetups, and browse meetups
                         information. All meetups are paginated. The
@@ -241,7 +276,37 @@ header-img: ""
             </div>
 
             <div id="express" class="proj" style="display:none">
-                <h5>Meetup Api</h5>
+                <div>
+                    <h5>Meetup API</h5>
+                    <div><span class="tab-tag">Express | Heroku | MongoDB | Mongoose</span></div>
+                    <div><span class="sub-intro">User can fetch data in json format</span></div>
+                    <p class="brief">This backend project enables the Meetup web app and Zip info web app to fetch data.
+                        It supports meetups and countries.
+                        It is built by Express and MongoDB, and hosted on Heroku
+                    </p>
+                </div>
+            </div>
+            <div id="angular" class="proj" style="display:none">
+                <div>
+                    <h5>Simple Post</h5>
+                    <div><span class="tab-tag">Angular | ExpressJS | AWS | MongoDB | Angular Material</span></div>
+                    <div><span class="sub-intro">User can signup and login to create new post messages with image. They
+                            can review, edit, and delete their posts</span></div>
+                    <p class="brief">This app was hosted on AWS, provide RESTful Apis that connects with MongoDB Atlas
+                        database
+                    </p>
+                </div>
+            </div>
+            <div id="otherProj" class="proj" style="display:none">
+                <div>
+                    <h5>Super Bus</h5>
+                    <div><span class="tab-tag">Adobe XD | Balsamiq</span></div>
+                    <div><span class="sub-intro">User Interface design project</span></div>
+                    <p class="brief">Redesign Transit app: The redesigned app allows user to search for bus, check for
+                        empty seat, check bus time schedule,
+                        plan route, pay the bus fare. It uses Adobe XD to make the high fidelity
+                    </p>
+                </div>
             </div>
         </div>
 

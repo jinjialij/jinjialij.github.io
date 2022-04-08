@@ -2,7 +2,7 @@
 layout: post
 title: 'Build a video chat app using native WebRTC and Socket.io'
 subtitle: 'An implementation on a Youtube WebRTC toturial'
-date: 2022-04-08
+date: 2022-04-10
 author: 'Jiali'
 header-img: 'img/post-bg-connection.jpg'
 tags:
