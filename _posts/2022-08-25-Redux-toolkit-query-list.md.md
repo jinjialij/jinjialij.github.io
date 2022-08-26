@@ -2,7 +2,7 @@
 layout: post
 title: 'Redux toolkit query learning memo'
 subtitle: 'A study note memo: Using RTK query in React'
-date: 2022-08-01
+date: 2022-08-25
 author: 'Jiali'
 header-img: 'img/post-bg-redux-toolkit.png'
 tags:
