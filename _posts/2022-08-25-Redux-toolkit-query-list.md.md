@@ -13,8 +13,7 @@ tags:
 ---
 
 This is a study note memo for learning RTK query along with an [online course for RTK query, lesson 6](https://www.youtube.com/watch?v=HyZzCHgG3AY).
-RTK Query is a powerful data fetching and caching tool. Other alternatives:  Apollo Client, React Query, Urql, and SWR
-This article will go over basic content and an example for a GET api endpoint query.
+RTK Query is a powerful data fetching and caching tool. Other alternatives:  Apollo Client, React Query, Urql, and SWR. 
 
 # RTK Query conetnt
 - Basic Apis and set up
