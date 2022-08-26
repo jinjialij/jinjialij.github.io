@@ -4,7 +4,7 @@ title: 'Redux toolkit query (1)'
 subtitle: 'A study note: Using RTK query in React (1)'
 date: 2022-08-26
 author: 'Jiali'
-header-img: 'img/post-bg-react.png'
+header-img: 'img/post-bg-redux.png'
 tags:
   - Frontend
   - RTKQuery
