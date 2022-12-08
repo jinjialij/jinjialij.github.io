@@ -6,12 +6,12 @@ date: 2022-12-01
 author: 'Jiali'
 header-img: 'img/post-bg-react.png'
 tags:
-  - REST Client
+  - Yup
   - Frontend
-  - VS Code
 ---
 
-When using Yup to construct a schema to do a conditonal validation( either all fields are empty or all of them have values), it throws error: cyclic dependency within a schema. [Check Explaination](https://github.com/jquense/yup/issues/176#issuecomment-367352042)
+When using Yup to construct a schema to do a conditonal validation( either all fields are empty or all of them have values), it throws error: cyclic dependency within a schema. [Check Explaination here](https://github.com/jquense/yup/issues/176#issuecomment-367352042) 
+
 To get rid of the error, need to add dependecy so that yup won't complain
 
 ```
