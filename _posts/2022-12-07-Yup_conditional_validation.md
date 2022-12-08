@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Encounter cyclic dependency error in Yup'
-subtitle: 'Conditional validation'
+subtitle: 'Conditional validation using Yup'
 date: 2022-12-01
 author: 'Jiali'
 header-img: 'img/post-bg-idea.jpg'
