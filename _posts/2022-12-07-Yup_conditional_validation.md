@@ -4,7 +4,7 @@ title: 'Encounter cyclic dependency error in Yup'
 subtitle: 'Conditional validation'
 date: 2022-12-01
 author: 'Jiali'
-header-img: 'img/post-bg-react.png'
+header-img: 'img/post-bg-idea.jpg'
 tags:
   - Yup
   - Frontend

@@ -4,7 +4,7 @@ title: 'Rest Client User Manual'
 subtitle: 'A detailed guide'
 date: 2022-11-01
 author: 'Jiali'
-header-img: 'img/post-bg-react.png'
+header-img: 'img/post-bg-connection.jpg'
 tags:
   - REST Client
   - Frontend
