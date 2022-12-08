@@ -2,7 +2,7 @@
 layout: post
 title: 'Encounter cyclic dependency error in Yup'
 subtitle: 'Conditional validation using Yup'
-date: 2022-12-01
+date: 2022-12-07
 author: 'Jiali'
 header-img: 'img/post-bg-idea.jpg'
 tags:
@@ -14,8 +14,8 @@ When using Yup to construct a schema to do a conditonal validation( either all f
 
 To get rid of the error, need to add dependecy so that yup won't complain
 
-```
-export const getBillSchema = (a, b, c, d) => {
+```javascript
+export const getSchema = (a, b, c, d) => {
   return Yup.object().shape(
     {
       [a]: Yup.number().when([b, c, d], {
