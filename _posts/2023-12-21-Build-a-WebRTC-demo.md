@@ -2,7 +2,7 @@
 layout: post
 title: 'Build a video chat app using native WebRTC'
 subtitle: 'An implementation on a Youtube WebRTC toturial'
-date: 2022-08-20
+date: 2023-08-20
 author: 'Jiali'
 header-img: 'img/post-bg-connection.jpg'
 tags:

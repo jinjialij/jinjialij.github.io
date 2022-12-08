@@ -1,12 +1,10 @@
 ---
 layout: post
-title: 'useRef and ForwardRef in React'
+title: 'Learn Webpack'
 subtitle: 'A detailed guide with examples'
-date: 2022-10-01
+date: 2023-11-01
 author: 'Jiali'
 header-img: 'img/post-bg-react.png'
 tags:
-  - React
   - Frontend
-  - Hooks
 ---
